@@ -17,6 +17,12 @@
 		else
 		{
 			$name=htmlspecialchars($_POST["name"]);
+			if(!ctype_alpha($name))
+				{
+					$errorDatabase = "<b>Name should contain only letters</b>";
+					$hasError=true;
+					
+				}
 		}
 		
 		
@@ -25,7 +31,7 @@
 			$result=insertCategory($name);
 			if($result === true)
 			{
-				echo "Category added"; 
+				header("Location: All Categories.php"); 
 			}
 			else
 			{
@@ -45,7 +51,12 @@
 		else
 		{
 			$name=htmlspecialchars($_POST["name"]);
-		
+			if(!ctype_alpha($name))
+				{
+					$errorDatabase = "<b>Name should contain only letters</b>";
+					$hasError=true;
+					
+				}
 		}
 		
 		

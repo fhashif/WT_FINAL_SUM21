@@ -207,8 +207,7 @@
 			
 			if($result === true)
 			{
-				echo htmlspecialchars($_POST["username"])."<br>";
-				echo htmlspecialchars($_POST["password"])."<br>";
+				header("Location: Add Category.php");
 			
 			}
 			else
