@@ -17,7 +17,7 @@
   <center>
      <h1>All students</h1><br><br><br>
 	 <form action="" method="post">
-	   <table border="1" width="">
+	   <table border="1" width="600px">
 	         <?php echo $errorDatabase;?>
 		   <tr>
 			   <th>Name</th>
@@ -26,6 +26,7 @@
 			   <th>Credit</th>
 			   <th>Cgpa</th>
 			   <th>Department</th>
+			   <th></th>
 		   </tr>
            <?php 
 				foreach($students as $s)
